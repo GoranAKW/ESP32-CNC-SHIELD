@@ -1,5 +1,8 @@
 # ESP32-CNC-SHIELD
 
+![My Image](V1.1/Images/ESP32_Cnc_Shield_V1.1_Front.png)
+https://github.com/GoranAKW/ESP32-CNC-SHIELD/blob/main/V1.1/Images/ESP32_Cnc_Shield_V1.1_Front.png
+
 Este proyecto como un proyecto privado para poder usar el modulo devkit ESP32 con GRBL para mis máquinas CNC actuales, para sustituir los actuales Arduino Uno con Prontoneers CNC SHIELD(ambos originales) con GRBL V1.1. 
 Así poder ejecutar el código CNC desde la tarjeta SD atravéz de la interfaz web sin necesidad de tener el ordenador conectado.
 El mi máquina grande (385x325x95) tengo finales de carrera (X, Y, Z), probe, nebulizador y relé para el fresador. 
