@@ -2,16 +2,16 @@
 
 ![My Image](V1.1/Images/ESP32_Cnc_Shield_V1.1_Front.png)
 
-Este proyecto como un proyecto privado para poder usar el modulo devkit ESP32 con GRBL para mis máquinas CNC actuales, para sustituir los actuales Arduino Uno con Protoneers CNC SHIELD(ambos originales) con GRBL V1.1. 
-Así poder ejecutar el código CNC desde la tarjeta SD a travéz de la interfaz web sin necesidad de tener el ordenador conectado.
-El mi máquina grande (385x325x95) tengo finales de carrera (X, Y, Z), probe, nebulizador y relé para el fresador. 
-Uso 24V para motores Nema23 de 2,8A y drivers DRV8825 en medio micro paso en todos los ejes para poder usar la máxima fuerza, ya que corto bastante aluminio, aparte de: madera, plástico y pcb:s. Esto es justo lo que busco, no necesito más caracteristicas.
-Bart Dring ha hecho un trabajo estupendo con el "port" y adaptaciones para nueva funciones, pero yo no las necesito en estas máquinas.
-Por eso he quitado todo menos lo antes mencionado, inclusive los pines para jumpers para configurar los pasos(MS0,MS1 y MS2).
-Si uno quiere se puede facilmente puentear el MS0 con MS1 y MS2 así llega los 3,3v y obtiene 256 micropasos.
+I started this proyect to use the ESP32 module devkit with GRBL for my actual CNC machines, to substitute the actual Arduino Uno with Protoneers CNC SHIELD(both originals) and GRBL V1.1. 
+Be able to run g-code from sd-card and web interface without any computer directly connected.
+On my big machine(385x325x95) i have endstops(X, Y, Z), probe, mist and a reley for the router. 
+It uses 24V and 2,8A for the Nema23 motors and DRV8825 drivers with half micro step for all axis, to run them at max force, as i cut  a lot of aluminum: wood, plastics and pcb:s. I don't need more features.
+Bart Dring has done a good job with the "port" and modifications and new funtions.
+I also preconfigured the micro steps on the board, but it can easely changed for more micro steps, shorting the(MS0,MS1 y MS2) to obtain up to 256 microsteps.
 
-La versión V1.0 fue muy instructivo, pero había hecho las pistas más estrechas a 0,5mm pero no fue suficiente, la fresa los comió en algunos sitios. Así que decidí hacer una nueva versión, además el tamaño no era tan bueno para poder fresar dos en la misma placa pcb(150x100).
+The version V1.0 was pretty instructiv, but i did the traces to small 0,5mm. It was not enough, the drillbit cut them in various places. 
+So i decided to make a new version, also the size was not optimized to cut two on the same pcb board(150x100).
 
-La versión V1.1 tiene un par de cambios de tamaño y emplazamiento de componentes, para poder fresar 2 unidades en una placa pcb de 150x100mm.
-Ahora mide 66x72. Lo he hecho tan grande porque la placa pcb que uso es de un lado solo y necesito espacio para las pistas. 
-Sí funciona seguramente haré una version SMD con conectores JST para los cables.
+Versión V1.1 have some changes in size and components placement to be able to cut 2 units on the same pcb board 150x100mm.
+Now the size is 66x72. I made it so big as the traces are only on one side.
+If it works as intended i surely will make a SMD version, with JST connectors to avoid loose cables.
